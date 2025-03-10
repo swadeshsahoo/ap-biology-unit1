@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP Biology Unit 1 Practice Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin: 0;
+        }
+        .question-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        details {
+            background-color: white;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+        }
+        summary:hover {
+            color: #4CAF50;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        .answer-section {
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        input[type="text"], textarea {
+            width: 90%;
+            padding: 5px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        textarea {
+            height: 60px;
+            resize: vertical;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            margin-top: 5px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AP Biology Unit 1: Chemistry of Life Practice Questions</h1>
+    </header>
+    <div class="question-container">
+        <!-- Multiple-Choice Questions -->
+        <details>
+            <summary>1. Which property of water allows it to moderate temperature changes in organisms and environments?</summary>
+            <div class="options">
+                <p>a) High surface tension</p>
+                <p>b) High specific heat</p>
+                <p>c) Low density as a solid</p>
+                <p>d) Adhesion to polar surfaces</p>
+            </div>
+            <div class="answer-section">
+                <input type="text" id="answer1" placeholder="Type your answer (e.g., b)">
+                <button onclick="saveAnswer(1)">Save</button>
+            </div>
+        </details>
+        <details>
+            <summary>2. What type of bond is responsible for water’s cohesive properties?</summary>
+            <div class="options">
+                <p>a) Ionic bond</p>
+                <p>b) Covalent bond</p>
+                <p>c) Hydrogen bond</p>
+                <p>d) Van der Waals forces</p>
+            </div>
+            <div class="answer-section">
+                <input type="text" id="answer2" placeholder="Type your answer (e.g., c)">
+                <button onclick="saveAnswer(2)">Save</button>
+            </div>
+        </details>
+        <details>
+            <summary>3. A solution with a pH of 3 has how many times more H⁺ ions than a solution with a pH of 5?</summary>
+            <div class="options">
+                <p>a) 2</p>
+                <p>b) 10</p>
+                <p>c) 100</p>
+                <p>d) 1000</p>
+            </div>
+            <div class="answer-section">
+                <input type="text" id="answer3" placeholder="Type your answer (e.g., c)">
+                <button onclick="saveAnswer(3)">Save</button>
+            </div>
+        </details>
+        <details>
+            <summary>4. Which of the following is a polysaccharide?</summary>
+            <div class="options">
+                <p>a) Glucose</p>
+                <p>b) Glycogen</p>
+                <p>c) Fatty acid</p>
+                <p>d) Amino acid</p>
+            </div>
+            <div class="answer-section">
+                <input type="text" id="answer4" placeholder="Type your answer (e.g., b)">
+                <button onclick="saveAnswer(4)">Save</button>
+            </div>
+        </details>
+        <details>
+            <summary>5. Which functional group is characteristic of amino acids and contributes to their ability to form proteins?</summary>
+            <div class="options">
+                <p>a) Hydroxyl (-OH)</p>
+                <p>b) Carboxyl (-COOH)</p>
+                <p>c) Amino (-NH₂)</p>
+                <p>d) Both b and c</p>
+            </div>
+            <div class="answer-section">
+                <input type="text" id="answer5" placeholder="Type your answer (e.g., d)">
+                <button onclick="saveAnswer(5)">Save</button>
+            </div>
+        </details>
+        <details>
+            <summary>6. Why is water considered a universal solvent?</summary>
+            <div class="options">
+                <p>a) It has a neutral pH</p>
+                <p>b) It is nonpolar</p>
+                <p>c) Its polarity allows it to dissolve ionic and polar substances</p>
+                <p>d) It forms covalent bonds with solutes</p>
+            </div>
+            <div class="answer-section">
+                <input type="text" id="answer6" placeholder="Type your answer (e.g., c)">
+                <button onclick="saveAnswer(6)">Save</button>
+            </div>
+        </details>
+        <details>
+            <summary>7. What molecule is removed during the formation of a peptide bond between two amino acids?</summary>
+            <div class="options">
+                <p>a) CO₂</p>
+                <p>b) H₂O</p>
+                <p>c) NH₃</p>
+                <p>d) O₂</p>
+            </div>
+            <div class="answer-section">
+                <input type="text" id="answer7" placeholder="Type your answer (e.g., b)">
+                <button onclick="saveAnswer(7)">Save</button>
+            </div>
+        </details>
+        <details>
+            <summary>8. The primary structure of a protein is determined by:</summary>
+            <div class="options">
+                <p>a) Hydrogen bonds between amino acids</p>
+                <p>b) The sequence of amino acids</p>
+                <p>c) Disulfide bridges</p>
+                <p>d) Interactions with water</p>
+            </div>
+            <div class="answer-section">
+                <input type="text" id="answer8" placeholder="Type your answer (e.g., b)">
+                <button onclick="saveAnswer(8)">Save</button>
+            </div>
+        </details>
+        <details>
+            <summary>9. Which property distinguishes lipids from other macromolecules?</summary>
+            <div class="options">
+                <p>a) They are polar and hydrophilic</p>
+                <p>b) They are insoluble in water</p>
+                <p>c) They contain peptide bonds</p>
+                <p>d) They are composed of monosaccharides</p>
+            </div>
+            <div class="answer-section">
+                <input type="text" id="answer9" placeholder="Type your answer (e.g., b)">
+                <button onclick="saveAnswer(9)">Save</button>
+            </div>
+        </details>
+        <details>
+            <summary>10. What is the role of hydrogen bonding in DNA structure?</summary>
+            <div class="options">
+                <p>a) It links nucleotides in a single strand</p>
+                <p>b) It stabilizes the double helix by pairing bases</p>
+                <p>c) It forms the sugar-phosphate backbone</p>
+                <p>d) It connects DNA to RNA</p>
+            </div>
+            <div class="answer-section">
+                <input type="text" id="answer10" placeholder="Type your answer (e.g., b)">
+                <button onclick="saveAnswer(10)">Save</button>
+            </div>
+        </details>
+        <details>
+            <summary>11. What is the general formula for a monosaccharide?</summary>
+            <div class="options">
+                <p>a) (CH₂O)ₙ</p>
+                <p>b) C₆H₁₂O₆</p>
+                <p>c) CH₂OH</p>
+                <p>d) CₙH₂ₙOₙ₊₁</p>
+            </div>
+            <div class="answer-section">
+                <input type="text" id="answer11" placeholder="Type your answer (e.g., a)">
+                <button onclick="saveAnswer(11)">Save</button>
+            </div>
+        </details>
+        <details>
+            <summary>12. How do enzymes rely on the properties of water?</summary>
+            <div class="options">
+                <p>a) Water acts as a catalyst</p>
+                <p>b) Water’s polarity stabilizes enzyme-substrate interactions</p>
+                <p>c) Water breaks peptide bonds</p>
+                <p>d) Water increases the pH of the reaction</p>
+            </div>
+            <div class="answer-section">
+                <input type="text" id="answer12" placeholder="Type your answer (e.g., b)">
+                <button onclick="saveAnswer(12)">Save</button>
+            </div>
+        </details>
+        <details>
+            <summary>13. Which process breaks down a triglyceride into glycerol and fatty acids?</summary>
+            <div class="options">
+                <p>a) Dehydration synthesis</p>
+                <p>b) Hydrolysis</p>
+                <p>c) Phosphorylation</p>
+                <p>d) Oxidation</p>
+            </div>
+            <div class="answer-section">
+                <input type="text" id="answer13" placeholder="Type your answer (e.g., b)">
+                <button onclick="saveAnswer(13)">Save</button>
+            </div>
+        </details>
+        <details>
+            <summary>14. Why do phospholipids form bilayers in cell membranes?</summary>
+            <div class="options">
+                <p>a) Their hydrophobic tails repel water</p>
+                <p>b) Their hydrophilic heads attract each other</p>
+                <p>c) Their tails are polar and heads are nonpolar</p>
+                <p>d) They are fully hydrophilic</p>
+            </div>
+            <div class="answer-section">
+                <input type="text" id="answer14" placeholder="Type your answer (e.g., a)">
+                <button onclick="saveAnswer(14)">Save</button>
+            </div>
+        </details>
+        <details>
+            <summary>15. What happens to the pH of a solution when a strong acid is added?</summary>
+            <div class="options">
+                <p>a) It increases</p>
+                <p>b) It decreases</p>
+                <p>c) It remains neutral</p>
+                <p>d) It becomes buffered</p>
+            </div>
+            <div class="answer-section">
+                <input type="text" id="answer15" placeholder="Type your answer (e.g., b)">
+                <button onclick="saveAnswer(15)">Save</button>
+            </div>
+        </details>
+        <details>
+            <summary>16. Which macromolecule stores genetic information?</summary>
+            <div class="options">
+                <p>a) Carbohydrate</p>
+                <p>b) Lipid</p>
+                <p>c) Protein</p>
+                <p>d) Nucleic acid</p>
+            </div>
+            <div class="answer-section">
+                <input type="text" id="answer16" placeholder="Type your answer (e.g., d)">
+                <button onclick="saveAnswer(16)">Save</button>
+            </div>
+        </details>
+        <details>
+            <summary>17. Why does ice float on liquid water?</summary>
+            <div class="options">
+                <p>a) Ice has a higher density than liquid water</p>
+                <p>b) Hydrogen bonds in ice form a less dense crystal structure</p>
+                <p>c) Ice is more polar than liquid water</p>
+                <p>d) Ice contains fewer hydrogen bonds</p>
+            </div>
+            <div class="answer-section">
+                <input type="text" id="answer17" placeholder="Type your answer (e.g., b)">
+                <button onclick="saveAnswer(17)">Save</button>
+            </div>
+        </details>
+        <details>
+            <summary>18. What type of bond stabilizes the tertiary structure of a protein?</summary>
+            <div class="options">
+                <p>a) Peptide bond</p>
+                <p>b) Hydrogen bond</p>
+                <p>c) Disulfide bond</p>
+                <p>d) Both b and c</p>
+            </div>
+            <div class="answer-section">
+                <input type="text" id="answer18" placeholder="Type your answer (e.g., c)">
+                <button onclick="saveAnswer(18)">Save</button>
+            </div>
+        </details>
+        <details>
+            <summary>19. What is the primary role of cellulose in plants?</summary>
+            <div class="options">
+                <p>a) Energy storage</p>
+                <p>b) Structural support</p>
+                <p>c) Enzyme catalysis</p>
+                <p>d) Genetic information</p>
+            </div>
+            <div class="answer-section">
+                <input type="text" id="answer19" placeholder="Type your answer (e.g., b)">
+                <button onclick="saveAnswer(19)">Save</button>
+            </div>
+        </details>
+        <details>
+            <summary>20. Which type of bond links the sugar and phosphate groups in a DNA strand?</summary>
+            <div class="options">
+                <p>a) Hydrogen bond</p>
+                <p>b) Ionic bond</p>
+                <p>c) Phosphodiester bond</p>
+                <p>d) Peptide bond</p>
+            </div>
+            <div class="answer-section">
+                <input type="text" id="answer20" placeholder="Type your answer (e.g., c)">
+                <button onclick="saveAnswer(20)">Save</button>
+            </div>
+        </details>
+
+        <!-- Short-Answer Questions -->
+        <details>
+            <summary>21. Explain how water’s high specific heat benefits living organisms.</summary>
+            <div class="answer-section">
+                <textarea id="answer21" placeholder="Type your answer here"></textarea>
+                <button onclick="saveAnswer(21)">Save</button>
+            </div>
+        </details>
+        <details>
+            <summary>22. Describe the role of hydrogen bonding in the structure of water and its biological significance.</summary>
+            <div class="answer-section">
+                <textarea id="answer22" placeholder="Type your answer here"></textarea>
+                <button onclick="saveAnswer(22)">Save</button>
+            </div>
+        </details>
+        <details>
+            <summary>23. How does the structure of a phospholipid contribute to its function in cell membranes?</summary>
+            <div class="answer-section">
+                <textarea id="answer23" placeholder="Type your answer here"></textarea>
+                <button onclick="saveAnswer(23)">Save</button>
+            </div>
+        </details>
+        <details>
+            <summary>24. What is the difference between dehydration synthesis and hydrolysis in the context of macromolecule formation?</summary>
+            <div class="answer-section">
+                <textarea id="answer24" placeholder="Type your answer here"></textarea>
+                <button onclick="saveAnswer(24)">Save</button>
+            </div>
+        </details>
+        <details>
+            <summary>25. Explain how the primary structure of a protein determines its final shape and function.</summary>
+            <div class="answer-section">
+                <textarea id="answer25" placeholder="Type your answer here"></textarea>
+                <button onclick="saveAnswer(25)">Save</button>
+            </div>
+        </details>
+        <details>
+            <summary>26. Why is water’s ability to act as a solvent critical for metabolic processes?</summary>
+            <div class="answer-section">
+                <textarea id="answer26" placeholder="Type your answer here"></textarea>
+                <button onclick="saveAnswer(26)">Save</button>
+            </div>
+        </details>
+        <details>
+            <summary>27. Describe the role of functional groups in determining the properties of amino acids.</summary>
+            <div class="answer-section">
+                <textarea id="answer27" placeholder="Type your answer here"></textarea>
+                <button onclick="saveAnswer(27)">Save</button>
+            </div>
+        </details>
+        <details>
+            <summary>28. How does the structure of starch differ from that of cellulose, and what functional differences result from this?</summary>
+            <div class="answer-section">
+                <textarea id="answer28" placeholder="Type your answer here"></textarea>
+                <button onclick="saveAnswer(28)">Save</button>
+            </div>
+        </details>
+        <details>
+            <summary>29. Explain why lipids are not considered true polymers like proteins and polysaccharides.</summary>
+            <div class="answer-section">
+                <textarea id="answer29" placeholder="Type your answer here"></textarea>
+                <button onclick="saveAnswer(29)">Save</button>
+            </div>
+        </details>
+        <details>
+            <summary>30. How does pH affect the structure and function of proteins in a biological system?</summary>
+            <div class="answer-section">
+                <textarea id="answer30" placeholder="Type your answer here"></textarea>
+                <button onclick="saveAnswer(30)">Save</button>
+            </div>
+        </details>
+    </div>
+
+    <script>
+        // Load saved answers when the page loads
+        window.onload = function() {
+            for (let i = 1; i <= 30; i++) {
+                let savedAnswer = localStorage.getItem(`answer${i}`);
+                if (savedAnswer) {
+                    document.getElementById(`answer${i}`).value = savedAnswer;
+                }
+            }
+        };
+
+        // Save answer to localStorage
+        function saveAnswer(questionNumber) {
+            let answer = document.getElementById(`answer${questionNumber}`).value;
+            localStorage.setItem(`answer${questionNumber}`, answer);
+            alert(`Answer for question ${questionNumber} saved!`);
+        }
+    </script>
+</body>
+</html>
