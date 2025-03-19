@@ -3,431 +3,523 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AP Biology Unit 1 Practice Questions</title>
+    <title>AP Biology Unit 1: Test Questions (Chemistry of Life)</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        header {
-            text-align: center;
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px;
-            margin-bottom: 20px;
-        }
-        h1 {
-            margin: 0;
-        }
-        .question-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        details {
-            background-color: white;
-            margin-bottom: 10px;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        summary {
-            cursor: pointer;
-            font-weight: bold;
-        }
-        summary:hover {
-            color: #4CAF50;
-        }
-        .options {
-            margin-left: 20px;
-        }
-        .answer-section {
-            margin-top: 10px;
-            margin-left: 20px;
-        }
-        input[type="text"], textarea {
-            width: 90%;
-            padding: 5px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-        }
-        textarea {
-            height: 60px;
-            resize: vertical;
-        }
-        button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            margin-top: 5px;
-            border-radius: 3px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+        h1 { text-align: center; color: #2c3e50; }
+        .question { margin-bottom: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 5px; background-color: #f9f9f9; }
+        .question p { margin: 0 0 10px 0; }
+        .options { margin-left: 20px; }
     </style>
 </head>
 <body>
-    <header>
-        <h1>AP Biology Unit 1: Chemistry of Life Practice Questions</h1>
-    </header>
-    <div class="question-container">
-        <!-- Multiple-Choice Questions -->
-        <details>
-            <summary>1. Which property of water allows it to moderate temperature changes in organisms and environments?</summary>
-            <div class="options">
-                <p>a) High surface tension</p>
-                <p>b) High specific heat</p>
-                <p>c) Low density as a solid</p>
-                <p>d) Adhesion to polar surfaces</p>
-            </div>
-            <div class="answer-section">
-                <input type="text" id="answer1" placeholder="Type your answer (e.g., b)">
-                <button onclick="saveAnswer(1)">Save</button>
-            </div>
-        </details>
-        <details>
-            <summary>2. What type of bond is responsible for water’s cohesive properties?</summary>
-            <div class="options">
-                <p>a) Ionic bond</p>
-                <p>b) Covalent bond</p>
-                <p>c) Hydrogen bond</p>
-                <p>d) Van der Waals forces</p>
-            </div>
-            <div class="answer-section">
-                <input type="text" id="answer2" placeholder="Type your answer (e.g., c)">
-                <button onclick="saveAnswer(2)">Save</button>
-            </div>
-        </details>
-        <details>
-            <summary>3. A solution with a pH of 3 has how many times more H⁺ ions than a solution with a pH of 5?</summary>
-            <div class="options">
-                <p>a) 2</p>
-                <p>b) 10</p>
-                <p>c) 100</p>
-                <p>d) 1000</p>
-            </div>
-            <div class="answer-section">
-                <input type="text" id="answer3" placeholder="Type your answer (e.g., c)">
-                <button onclick="saveAnswer(3)">Save</button>
-            </div>
-        </details>
-        <details>
-            <summary>4. Which of the following is a polysaccharide?</summary>
-            <div class="options">
-                <p>a) Glucose</p>
-                <p>b) Glycogen</p>
-                <p>c) Fatty acid</p>
-                <p>d) Amino acid</p>
-            </div>
-            <div class="answer-section">
-                <input type="text" id="answer4" placeholder="Type your answer (e.g., b)">
-                <button onclick="saveAnswer(4)">Save</button>
-            </div>
-        </details>
-        <details>
-            <summary>5. Which functional group is characteristic of amino acids and contributes to their ability to form proteins?</summary>
-            <div class="options">
-                <p>a) Hydroxyl (-OH)</p>
-                <p>b) Carboxyl (-COOH)</p>
-                <p>c) Amino (-NH₂)</p>
-                <p>d) Both b and c</p>
-            </div>
-            <div class="answer-section">
-                <input type="text" id="answer5" placeholder="Type your answer (e.g., d)">
-                <button onclick="saveAnswer(5)">Save</button>
-            </div>
-        </details>
-        <details>
-            <summary>6. Why is water considered a universal solvent?</summary>
-            <div class="options">
-                <p>a) It has a neutral pH</p>
-                <p>b) It is nonpolar</p>
-                <p>c) Its polarity allows it to dissolve ionic and polar substances</p>
-                <p>d) It forms covalent bonds with solutes</p>
-            </div>
-            <div class="answer-section">
-                <input type="text" id="answer6" placeholder="Type your answer (e.g., c)">
-                <button onclick="saveAnswer(6)">Save</button>
-            </div>
-        </details>
-        <details>
-            <summary>7. What molecule is removed during the formation of a peptide bond between two amino acids?</summary>
-            <div class="options">
-                <p>a) CO₂</p>
-                <p>b) H₂O</p>
-                <p>c) NH₃</p>
-                <p>d) O₂</p>
-            </div>
-            <div class="answer-section">
-                <input type="text" id="answer7" placeholder="Type your answer (e.g., b)">
-                <button onclick="saveAnswer(7)">Save</button>
-            </div>
-        </details>
-        <details>
-            <summary>8. The primary structure of a protein is determined by:</summary>
-            <div class="options">
-                <p>a) Hydrogen bonds between amino acids</p>
-                <p>b) The sequence of amino acids</p>
-                <p>c) Disulfide bridges</p>
-                <p>d) Interactions with water</p>
-            </div>
-            <div class="answer-section">
-                <input type="text" id="answer8" placeholder="Type your answer (e.g., b)">
-                <button onclick="saveAnswer(8)">Save</button>
-            </div>
-        </details>
-        <details>
-            <summary>9. Which property distinguishes lipids from other macromolecules?</summary>
-            <div class="options">
-                <p>a) They are polar and hydrophilic</p>
-                <p>b) They are insoluble in water</p>
-                <p>c) They contain peptide bonds</p>
-                <p>d) They are composed of monosaccharides</p>
-            </div>
-            <div class="answer-section">
-                <input type="text" id="answer9" placeholder="Type your answer (e.g., b)">
-                <button onclick="saveAnswer(9)">Save</button>
-            </div>
-        </details>
-        <details>
-            <summary>10. What is the role of hydrogen bonding in DNA structure?</summary>
-            <div class="options">
-                <p>a) It links nucleotides in a single strand</p>
-                <p>b) It stabilizes the double helix by pairing bases</p>
-                <p>c) It forms the sugar-phosphate backbone</p>
-                <p>d) It connects DNA to RNA</p>
-            </div>
-            <div class="answer-section">
-                <input type="text" id="answer10" placeholder="Type your answer (e.g., b)">
-                <button onclick="saveAnswer(10)">Save</button>
-            </div>
-        </details>
-        <details>
-            <summary>11. What is the general formula for a monosaccharide?</summary>
-            <div class="options">
-                <p>a) (CH₂O)ₙ</p>
-                <p>b) C₆H₁₂O₆</p>
-                <p>c) CH₂OH</p>
-                <p>d) CₙH₂ₙOₙ₊₁</p>
-            </div>
-            <div class="answer-section">
-                <input type="text" id="answer11" placeholder="Type your answer (e.g., a)">
-                <button onclick="saveAnswer(11)">Save</button>
-            </div>
-        </details>
-        <details>
-            <summary>12. How do enzymes rely on the properties of water?</summary>
-            <div class="options">
-                <p>a) Water acts as a catalyst</p>
-                <p>b) Water’s polarity stabilizes enzyme-substrate interactions</p>
-                <p>c) Water breaks peptide bonds</p>
-                <p>d) Water increases the pH of the reaction</p>
-            </div>
-            <div class="answer-section">
-                <input type="text" id="answer12" placeholder="Type your answer (e.g., b)">
-                <button onclick="saveAnswer(12)">Save</button>
-            </div>
-        </details>
-        <details>
-            <summary>13. Which process breaks down a triglyceride into glycerol and fatty acids?</summary>
-            <div class="options">
-                <p>a) Dehydration synthesis</p>
-                <p>b) Hydrolysis</p>
-                <p>c) Phosphorylation</p>
-                <p>d) Oxidation</p>
-            </div>
-            <div class="answer-section">
-                <input type="text" id="answer13" placeholder="Type your answer (e.g., b)">
-                <button onclick="saveAnswer(13)">Save</button>
-            </div>
-        </details>
-        <details>
-            <summary>14. Why do phospholipids form bilayers in cell membranes?</summary>
-            <div class="options">
-                <p>a) Their hydrophobic tails repel water</p>
-                <p>b) Their hydrophilic heads attract each other</p>
-                <p>c) Their tails are polar and heads are nonpolar</p>
-                <p>d) They are fully hydrophilic</p>
-            </div>
-            <div class="answer-section">
-                <input type="text" id="answer14" placeholder="Type your answer (e.g., a)">
-                <button onclick="saveAnswer(14)">Save</button>
-            </div>
-        </details>
-        <details>
-            <summary>15. What happens to the pH of a solution when a strong acid is added?</summary>
-            <div class="options">
-                <p>a) It increases</p>
-                <p>b) It decreases</p>
-                <p>c) It remains neutral</p>
-                <p>d) It becomes buffered</p>
-            </div>
-            <div class="answer-section">
-                <input type="text" id="answer15" placeholder="Type your answer (e.g., b)">
-                <button onclick="saveAnswer(15)">Save</button>
-            </div>
-        </details>
-        <details>
-            <summary>16. Which macromolecule stores genetic information?</summary>
-            <div class="options">
-                <p>a) Carbohydrate</p>
-                <p>b) Lipid</p>
-                <p>c) Protein</p>
-                <p>d) Nucleic acid</p>
-            </div>
-            <div class="answer-section">
-                <input type="text" id="answer16" placeholder="Type your answer (e.g., d)">
-                <button onclick="saveAnswer(16)">Save</button>
-            </div>
-        </details>
-        <details>
-            <summary>17. Why does ice float on liquid water?</summary>
-            <div class="options">
-                <p>a) Ice has a higher density than liquid water</p>
-                <p>b) Hydrogen bonds in ice form a less dense crystal structure</p>
-                <p>c) Ice is more polar than liquid water</p>
-                <p>d) Ice contains fewer hydrogen bonds</p>
-            </div>
-            <div class="answer-section">
-                <input type="text" id="answer17" placeholder="Type your answer (e.g., b)">
-                <button onclick="saveAnswer(17)">Save</button>
-            </div>
-        </details>
-        <details>
-            <summary>18. What type of bond stabilizes the tertiary structure of a protein?</summary>
-            <div class="options">
-                <p>a) Peptide bond</p>
-                <p>b) Hydrogen bond</p>
-                <p>c) Disulfide bond</p>
-                <p>d) Both b and c</p>
-            </div>
-            <div class="answer-section">
-                <input type="text" id="answer18" placeholder="Type your answer (e.g., c)">
-                <button onclick="saveAnswer(18)">Save</button>
-            </div>
-        </details>
-        <details>
-            <summary>19. What is the primary role of cellulose in plants?</summary>
-            <div class="options">
-                <p>a) Energy storage</p>
-                <p>b) Structural support</p>
-                <p>c) Enzyme catalysis</p>
-                <p>d) Genetic information</p>
-            </div>
-            <div class="answer-section">
-                <input type="text" id="answer19" placeholder="Type your answer (e.g., b)">
-                <button onclick="saveAnswer(19)">Save</button>
-            </div>
-        </details>
-        <details>
-            <summary>20. Which type of bond links the sugar and phosphate groups in a DNA strand?</summary>
-            <div class="options">
-                <p>a) Hydrogen bond</p>
-                <p>b) Ionic bond</p>
-                <p>c) Phosphodiester bond</p>
-                <p>d) Peptide bond</p>
-            </div>
-            <div class="answer-section">
-                <input type="text" id="answer20" placeholder="Type your answer (e.g., c)">
-                <button onclick="saveAnswer(20)">Save</button>
-            </div>
-        </details>
+    <h1>AP Biology Unit 1: Chemistry of Life<br>50 Hard Test Questions<br>(Elements, Macromolecules, Nucleic Acids)</h1>
 
-        <!-- Short-Answer Questions -->
-        <details>
-            <summary>21. Explain how water’s high specific heat benefits living organisms.</summary>
-            <div class="answer-section">
-                <textarea id="answer21" placeholder="Type your answer here"></textarea>
-                <button onclick="saveAnswer(21)">Save</button>
-            </div>
-        </details>
-        <details>
-            <summary>22. Describe the role of hydrogen bonding in the structure of water and its biological significance.</summary>
-            <div class="answer-section">
-                <textarea id="answer22" placeholder="Type your answer here"></textarea>
-                <button onclick="saveAnswer(22)">Save</button>
-            </div>
-        </details>
-        <details>
-            <summary>23. How does the structure of a phospholipid contribute to its function in cell membranes?</summary>
-            <div class="answer-section">
-                <textarea id="answer23" placeholder="Type your answer here"></textarea>
-                <button onclick="saveAnswer(23)">Save</button>
-            </div>
-        </details>
-        <details>
-            <summary>24. What is the difference between dehydration synthesis and hydrolysis in the context of macromolecule formation?</summary>
-            <div class="answer-section">
-                <textarea id="answer24" placeholder="Type your answer here"></textarea>
-                <button onclick="saveAnswer(24)">Save</button>
-            </div>
-        </details>
-        <details>
-            <summary>25. Explain how the primary structure of a protein determines its final shape and function.</summary>
-            <div class="answer-section">
-                <textarea id="answer25" placeholder="Type your answer here"></textarea>
-                <button onclick="saveAnswer(25)">Save</button>
-            </div>
-        </details>
-        <details>
-            <summary>26. Why is water’s ability to act as a solvent critical for metabolic processes?</summary>
-            <div class="answer-section">
-                <textarea id="answer26" placeholder="Type your answer here"></textarea>
-                <button onclick="saveAnswer(26)">Save</button>
-            </div>
-        </details>
-        <details>
-            <summary>27. Describe the role of functional groups in determining the properties of amino acids.</summary>
-            <div class="answer-section">
-                <textarea id="answer27" placeholder="Type your answer here"></textarea>
-                <button onclick="saveAnswer(27)">Save</button>
-            </div>
-        </details>
-        <details>
-            <summary>28. How does the structure of starch differ from that of cellulose, and what functional differences result from this?</summary>
-            <div class="answer-section">
-                <textarea id="answer28" placeholder="Type your answer here"></textarea>
-                <button onclick="saveAnswer(28)">Save</button>
-            </div>
-        </details>
-        <details>
-            <summary>29. Explain why lipids are not considered true polymers like proteins and polysaccharides.</summary>
-            <div class="answer-section">
-                <textarea id="answer29" placeholder="Type your answer here"></textarea>
-                <button onclick="saveAnswer(29)">Save</button>
-            </div>
-        </details>
-        <details>
-            <summary>30. How does pH affect the structure and function of proteins in a biological system?</summary>
-            <div class="answer-section">
-                <textarea id="answer30" placeholder="Type your answer here"></textarea>
-                <button onclick="saveAnswer(30)">Save</button>
-            </div>
-        </details>
+    <!-- Elements of Life -->
+    <div class="question">
+        <p>1. Approximately what percentage of the human body is composed of carbon, hydrogen, oxygen, and nitrogen combined?</p>
+        <div class="options">
+            <p>A) 50%</p>
+            <p>B) 75%</p>
+            <p>C) 96%</p>
+            <p>D) 99%</p>
+        </div>
     </div>
 
-    <script>
-        // Load saved answers when the page loads
-        window.onload = function() {
-            for (let i = 1; i <= 30; i++) {
-                let savedAnswer = localStorage.getItem(`answer${i}`);
-                if (savedAnswer) {
-                    document.getElementById(`answer${i}`).value = savedAnswer;
-                }
-            }
-        };
+    <div class="question">
+        <p>2. Which element’s ability to form four covalent bonds makes it the backbone of organic molecules?</p>
+        <div class="options">
+            <p>A) Nitrogen</p>
+            <p>B) Carbon</p>
+            <p>C) Oxygen</p>
+            <p>D) Phosphorus</p>
+        </div>
+    </div>
 
-        // Save answer to localStorage
-        function saveAnswer(questionNumber) {
-            let answer = document.getElementById(`answer${questionNumber}`).value;
-            localStorage.setItem(`answer${questionNumber}`, answer);
-            alert(`Answer for question ${questionNumber} saved!`);
-        }
-    </script>
+    <div class="question">
+        <p>3. The high electronegativity of oxygen contributes to:</p>
+        <div class="options">
+            <p>A) Hydrophobic interactions</p>
+            <p>B) Hydrogen bonding in water</p>
+            <p>C) Ionic bonding in salts</p>
+            <p>D) Covalent bonding in lipids</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>4. Phosphorus is critical in living organisms primarily because it is a component of:</p>
+        <div class="options">
+            <p>A) Amino acids</p>
+            <p>B) Nucleotides</p>
+            <p>C) Carbohydrates</p>
+            <p>D) Fatty acids</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>5. Which trace element is essential for thyroid hormone function?</p>
+        <div class="options">
+            <p>A) Iron</p>
+            <p>B) Iodine</p>
+            <p>C) Zinc</p>
+            <p>D) Magnesium</p>
+        </div>
+    </div>
+
+    <!-- Introduction to Biological Macromolecules -->
+    <div class="question">
+        <p>6. Biological macromolecules are primarily formed through:</p>
+        <div class="options">
+            <p>A) Ionic bonding</p>
+            <p>B) Dehydration synthesis</p>
+            <p>C) Hydrolysis</p>
+            <p>D) Hydrogen bonding</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>7. Which class of macromolecules is not typically a polymer?</p>
+        <div class="options">
+            <p>A) Proteins</p>
+            <p>B) Carbohydrates</p>
+            <p>C) Lipids</p>
+            <p>D) Nucleic acids</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>8. The breakdown of macromolecules into monomers requires:</p>
+        <div class="options">
+            <p>A) Addition of water</p>
+            <p>B) Removal of water</p>
+            <p>C) Covalent bond formation</p>
+            <p>D) Energy release only</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>9. Monomers of biological macromolecules are linked by:</p>
+        <div class="options">
+            <p>A) Peptide bonds</p>
+            <p>B) Glycosidic bonds</p>
+            <p>C) Covalent bonds</p>
+            <p>D) Ester bonds</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>10. Which macromolecule class serves as the primary energy source for cells?</p>
+        <div class="options">
+            <p>A) Proteins</p>
+            <p>B) Carbohydrates</p>
+            <p>C) Lipids</p>
+            <p>D) Nucleic acids</p>
+        </div>
+    </div>
+
+    <!-- Properties of Biological Macromolecules -->
+    <div class="question">
+        <p>11. The insolubility of lipids in water is due to their:</p>
+        <div class="options">
+            <p>A) Polar nature</p>
+            <p>B) Nonpolar hydrocarbon chains</p>
+            <p>C) High oxygen content</p>
+            <p>D) Ionic bonds</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>12. The specific 3D shape of proteins is critical for their:</p>
+        <div class="options">
+            <p>A) Energy storage</p>
+            <p>B) Function</p>
+            <p>C) Hydrophobicity</p>
+            <p>D) Solubility</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>13. Carbohydrates like cellulose are indigestible to humans due to:</p>
+        <div class="options">
+            <p>A) Beta-glycosidic linkages</p>
+            <p>B) Alpha-glycosidic linkages</p>
+            <p>C) Peptide bonds</p>
+            <p>D) Ester linkages</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>14. The high energy storage capacity of lipids is attributed to:</p>
+        <div class="options">
+            <p>A) Hydrogen bonding</p>
+            <p>B) Numerous C-H bonds</p>
+            <p>C) Polar head groups</p>
+            <p>D) Ionic interactions</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>15. Denaturation of a protein alters its:</p>
+        <div class="options">
+            <p>A) Primary structure</p>
+            <p>B) Secondary and tertiary structure</p>
+            <p>C) Amino acid sequence</p>
+            <p>D) Peptide bonds</p>
+        </div>
+    </div>
+
+    <!-- Structure and Function of Biological Macromolecules -->
+    <div class="question">
+        <p>16. The tertiary structure of a protein is stabilized by:</p>
+        <div class="options">
+            <p>A) Peptide bonds</p>
+            <p>B) Hydrogen bonds, disulfide bridges, and hydrophobic interactions</p>
+            <p>C) Glycosidic bonds</p>
+            <p>D) Ester linkages</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>17. Glycogen’s branched structure allows for:</p>
+        <div class="options">
+            <p>A) Structural support</p>
+            <p>B) Rapid energy release</p>
+            <p>C) Water insolubility</p>
+            <p>D) Enzyme inhibition</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>18. The phospholipid bilayer of cell membranes is formed due to:</p>
+        <div class="options">
+            <p>A) Hydrophilic tails</p>
+            <p>B) Amphipathic nature</p>
+            <p>C) Covalent bonding</p>
+            <p>D) Ionic interactions</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>19. Enzymes increase reaction rates by:</p>
+        <div class="options">
+            <p>A) Raising activation energy</p>
+            <p>B) Lowering activation energy</p>
+            <p>C) Denaturing substrates</p>
+            <p>D) Forming permanent bonds</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>20. The alpha-helix and beta-sheet are features of a protein’s:</p>
+        <div class="options">
+            <p>A) Primary structure</p>
+            <p>B) Secondary structure</p>
+            <p>C) Tertiary structure</p>
+            <p>D) Quaternary structure</p>
+        </div>
+    </div>
+
+    <!-- Nucleic Acids -->
+    <div class="question">
+        <p>21. The monomers of nucleic acids are:</p>
+        <div class="options">
+            <p>A) Amino acids</p>
+            <p>B) Nucleotides</p>
+            <p>C) Monosaccharides</p>
+            <p>D) Fatty acids</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>22. The sugar in DNA is:</p>
+        <div class="options">
+            <p>A) Ribose</p>
+            <p>B) Deoxyribose</p>
+            <p>C) Glucose</p>
+            <p>D) Fructose</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>23. Hydrogen bonds in DNA pair:</p>
+        <div class="options">
+            <p>A) A with C</p>
+            <p>B) T with G</p>
+            <p>C) A with T</p>
+            <p>D) C with T</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>24. The primary function of RNA is:</p>
+        <div class="options">
+            <p>A) Long-term genetic storage</p>
+            <p>B) Protein synthesis</p>
+            <p>C) Energy storage</p>
+            <p>D) Structural support</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>25. The phosphodiester bonds in nucleic acids link:</p>
+        <div class="options">
+            <p>A) Nitrogenous bases</p>
+            <p>B) Sugar and phosphate groups</p>
+            <p>C) Bases to sugars</p>
+            <p>D) Adjacent bases</p>
+        </div>
+    </div>
+
+    <!-- Mixed Topics -->
+    <div class="question">
+        <p>26. Sulfur is critical in proteins due to its presence in:</p>
+        <div class="options">
+            <p>A) Peptide bonds</p>
+            <p>B) Disulfide bridges</p>
+            <p>C) Glycosidic bonds</p>
+            <p>D) Ester linkages</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>27. Which macromolecule’s monomers contain nitrogen?</p>
+        <div class="options">
+            <p>A) Carbohydrates</p>
+            <p>B) Proteins</p>
+            <p>C) Lipids</p>
+            <p>D) All of the above</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>28. Chitin, a polysaccharide, provides:</p>
+        <div class="options">
+            <p>A) Energy storage</p>
+            <p>B) Structural support</p>
+            <p>C) Catalysis</p>
+            <p>D) Genetic information</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>29. The active site of an enzyme is determined by its:</p>
+        <div class="options">
+            <p>A) Primary structure only</p>
+            <p>B) Tertiary structure</p>
+            <p>C) Peptide bonds</p>
+            <p>D) Amino acid composition</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>30. DNA’s double helix is stabilized by:</p>
+        <div class="options">
+            <p>A) Ionic bonds</p>
+            <p>B) Hydrogen bonds</p>
+            <p>C) Disulfide bridges</p>
+            <p>D) Peptide bonds</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>31. Magnesium is essential as a cofactor in:</p>
+        <div class="options">
+            <p>A) DNA replication</p>
+            <p>B) Protein folding</p>
+            <p>C) Lipid synthesis</p>
+            <p>D) Carbohydrate metabolism</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>32. The R-groups of amino acids determine a protein’s:</p>
+        <div class="options">
+            <p>A) Primary structure</p>
+            <p>B) Folding and function</p>
+            <p>C) Peptide bonds</p>
+            <p>D) Hydrolysis rate</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>33. Saturated fatty acids lack:</p>
+        <div class="options">
+            <p>A) Double bonds</p>
+            <p>B) Hydrogen atoms</p>
+            <p>C) Carbon chains</p>
+            <p>D) Glycerol</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>34. tRNA’s role in protein synthesis depends on its:</p>
+        <div class="options">
+            <p>A) Double-stranded structure</p>
+            <p>B) Anticodon</p>
+            <p>C) Sugar-phosphate backbone</p>
+            <p>D) Hydrophobic nature</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>35. Cellulose and starch differ in their:</p>
+        <div class="options">
+            <p>A) Monomer type</p>
+            <p>B) Glycosidic bond orientation</p>
+            <p>C) Nitrogen content</p>
+            <p>D) Energy content</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>36. Iron is a key component of:</p>
+        <div class="options">
+            <p>A) Hemoglobin</p>
+            <p>B) DNA</p>
+            <p>C) Phospholipids</p>
+            <p>D) Glycogen</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>37. The quaternary structure of a protein involves:</p>
+        <div class="options">
+            <p>A) A single polypeptide</p>
+            <p>B) Multiple polypeptide subunits</p>
+            <p>C) Alpha-helices only</p>
+            <p>D) Hydrogen bonds only</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>38. Hydrolysis of ATP releases energy by breaking:</p>
+        <div class="options">
+            <p>A) Hydrogen bonds</p>
+            <p>B) Phosphoanhydride bonds</p>
+            <p>C) Glycosidic bonds</p>
+            <p>D) Peptide bonds</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>39. Unsaturated fatty acids have:</p>
+        <div class="options">
+            <p>A) No double bonds</p>
+            <p>B) At least one double bond</p>
+            <p>C) Maximum hydrogen atoms</p>
+            <p>D) Straight chains only</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>40. The complementary base pairing in DNA ensures:</p>
+        <div class="options">
+            <p>A) Energy storage</p>
+            <p>B) Accurate replication</p>
+            <p>C) Structural rigidity</p>
+            <p>D) Enzyme activity</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>41. Calcium’s role in organisms includes:</p>
+        <div class="options">
+            <p>A) Forming bone structure</p>
+            <p>B) DNA synthesis</p>
+            <p>C) Lipid storage</p>
+            <p>D) Carbohydrate breakdown</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>42. Polypeptides are formed by linking amino acids via:</p>
+        <div class="options">
+            <p>A) Ester bonds</p>
+            <p>B) Peptide bonds</p>
+            <p>C) Glycosidic bonds</p>
+            <p>D) Phosphodiester bonds</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>43. The fluidity of cell membranes is increased by:</p>
+        <div class="options">
+            <p>A) Saturated fatty acids</p>
+            <p>B) Unsaturated fatty acids</p>
+            <p>C) Cholesterol at high levels</p>
+            <p>D) Long hydrocarbon chains</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>44. mRNA is synthesized from DNA during:</p>
+        <div class="options">
+            <p>A) Translation</p>
+            <p>B) Transcription</p>
+            <p>C) Replication</p>
+            <p>D) Denaturation</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>45. Starch’s helical structure facilitates:</p>
+        <div class="options">
+            <p>A) Structural support</p>
+            <p>B) Energy storage</p>
+            <p>C) Water repulsion</p>
+            <p>D) Catalysis</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>46. Sodium is critical for:</p>
+        <div class="options">
+            <p>A) Nerve impulse transmission</p>
+            <p>B) Protein synthesis</p>
+            <p>C) Lipid bilayer formation</p>
+            <p>D) Carbohydrate storage</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>47. A protein’s function is lost if its:</p>
+        <div class="options">
+            <p>A) Primary structure is altered</p>
+            <p>B) Tertiary structure is disrupted</p>
+            <p>C) Peptide bonds are strengthened</p>
+            <p>D) Amino acids are unchanged</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>48. The 5’ to 3’ directionality of DNA refers to:</p>
+        <div class="options">
+            <p>A) Base pairing</p>
+            <p>B) Sugar-phosphate backbone</p>
+            <p>C) Hydrogen bonding</p>
+            <p>D) Helix formation</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>49. Triglycerides consist of:</p>
+        <div class="options">
+            <p>A) Glycerol and three fatty acids</p>
+            <p>B) Glycerol and one fatty acid</p>
+            <p>C) Phosphate and two fatty acids</p>
+            <p>D) Glucose and fatty acids</p>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>50. The nitrogenous base unique to RNA is:</p>
+        <div class="options">
+            <p>A) Thymine</p>
+            <p>B) Uracil</p>
+            <p>C) Cytosine</p>
+            <p>D) Guanine</p>
+        </div>
+    </div>
+
 </body>
 </html>
